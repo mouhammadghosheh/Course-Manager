@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/courses.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/index.js" type="module"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header id="header">
+    <img id="head-img" src="../assets/pngwing.com.png" height="200" width="200">
+<!--    <p id="head-name"> Mohammad and Wisam </p>-->
+</header>
+
+<div class="addCourse">
+    <button class="add-butt" id="add-button" type="button">Add Course</button>
+</div>
+<div id="tab">
+    <table>
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Lecturer</th>
+            <th>start_date</th>
+            <th>end_date</th>
+            <th>prerequisite_course</th>
+            <th>control</th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+
+        <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+    <div class="addCourse">
+        <button id="lower-butt" class="add-butt" type="button">Add Course</button>
+    </div>
+</div>
+<div class="popup-container">
+    <!-- Popup content -->
+    <h2>Add Course</h2>
+    <!-- Add your form fields or other content here -->
+    <button class="close-button">Close</button>
+</div>
+
+<div class="overlay"></div>
+</body>
+</html>

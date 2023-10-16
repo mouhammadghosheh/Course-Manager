@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+    background-size: cover;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.header {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    background:inherit;
+    background-attachment: fixed;
+}
+
+#head-img {
+    justify-content: flex-start;
+}
+
+#head-name {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: Mukti, serif;
+    position: relative;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-color: inherit;
+}
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: rgba(223, 211, 195, 0.29);
+}
+.button-row {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    border-radius: 10px;
+    border-spacing: 2px;
+}
+.button-row .StudentList{
+    background-color: rgba(150, 189, 206, 0.29);
+    border-radius: 10px;
+    margin:auto;
+    padding: 8px 1px;
+    font-size: 18px;
+    width: 70%;
+
+}
+.button-row .addStudent{
+    background-color: rgba(150, 189, 206, 0.29);
+    border-radius: 10px;
+    margin:auto;
+    padding: 8px 1px;
+    font-size: 18px;
+    width: 70%;
+
+}
+.button-row .delete{
+    background-color: rgba(150, 189, 206, 0.29);
+    border-radius: 10px;
+    margin:auto;
+    padding: 8px 1px;
+    font-size: 18px;
+    width: 70%;
+
+}
+.button-row .edit{
+    background-color: rgba(150, 189, 206, 0.29);
+    border-radius: 10px;
+    margin:auto;
+    padding: 8px 1px;
+    font-size: 18px;
+    width: 70%;
+
+}
+.button-row .edit:hover{
+    background-color: #596E79;
+}
+.button-row .delete:hover{
+    background-color: #596E79;
+}
+.button-row .addStudent:hover{
+    background-color: #596E79;
+}
+.button-row .StudentList:hover{
+    background-color: #596E79;
+}
+.addCourse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+}
+
+.add-butt {
+    font-size: large;
+    border-color: #d9d3d3;
+    border-radius: 10px;
+    background-color: inherit;
+    transition: all .2s ease-in-out;
+}
+
+.add-butt:hover {
+    background-color: #596E79;
+    transform: scale(1.1);
+}
+
+/* Add the following CSS to center the button */
+.addCourse:before {
+    content: "";
+    flex-grow: 1;
+}
+
+.addCourse:after {
+    content: "";
+    flex-grow: 1;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 9999;
+}
+
+/* Styles for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+#lower-butt{
+    margin-bottom: 250px;
+}
